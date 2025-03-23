@@ -1,0 +1,26 @@
+{
+    "name": "Nuxt 3 DevContainer",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/src",
+    "customizations": {
+        "vscode": {
+          "extensions": [
+            "esbenp.prettier-vscode",
+            "dbaeumer.vscode-eslint",
+            "stylelint.vscode-stylelint",
+            "EditorConfig.EditorConfig"
+          ],
+          "settings": {
+            "editor.formatOnSave": true,
+            "editor.codeActionsOnSave": {
+              "source.fixAll": "always",
+              "source.fixAll.eslint": "always",
+              "source.fixAll.stylelint": "always"
+            }
+          }
+        }
+      },
+    "postCreateCommand": "yarn install"
+  }
+  
