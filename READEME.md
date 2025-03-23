@@ -13,3 +13,9 @@ docker compose down
 docker-compose exec app sh
 /src # yarn dev
 ```
+
+### Gitのリポジトリを変更
+* デフォルトのブランチを変更
+```
+/src # git config --global init.defaultBranch develop
+```
