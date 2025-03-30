@@ -17,7 +17,7 @@ export default tseslint.config(
     ignores: [
       "**/.*", // すべての隠しファイル・ディレクトリ（例: .git, .vscode, .nuxt など）
       "**/node_modules", // node_modules フォルダを無視
-      "**/.nuxt", // Next.js のビルドフォルダを無視（例）
+      "./.nuxt", // Next.js のビルドフォルダを無視（例）
     ],
     rules: {
       "vue/valid-template-root": "off",
